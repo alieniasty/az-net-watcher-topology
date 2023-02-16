@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sigma example: Use node and edge reducers</title>
+    <title>Sigma example: From CSV to network map</title>
   </head>
   <body>
     <style>
@@ -17,17 +17,16 @@
         padding: 0;
         overflow: hidden;
       }
-      #search {
+      #loader {
         position: absolute;
-        right: 1em;
-        top: 1em;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4em;
       }
     </style>
     <div id="sigma-container"></div>
-    <div id="search">
-      <input type="search" id="search-input" list="suggestions" placeholder="Search for a node..." />
-      <datalist id="suggestions"></datalist>
-    </div>
     <script src="build/bundle.js"></script>
   </body>
 </html>
