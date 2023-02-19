@@ -1,3 +1,1 @@
-type Nullable<T> = T | null;
-
-export { Nullable }
+export type Nullable<T> = T | null;

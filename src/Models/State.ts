@@ -1,6 +1,6 @@
 import { Nullable } from "../Types/Nullable";
 
-interface State {
+export interface State {
     hoveredNode?: string;
     searchQuery: string;
 
@@ -14,5 +14,3 @@ interface State {
     draggedNode?: Nullable<string>;
     isDragging?: boolean;
 }
-
-export { State }
